@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Css/style.css">
+     <!-- font-awesome cdn -->
+     <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"><!--to use icon in program-->
+</head>
+<body>
+    <!-- Header -->
+   <header id="Header">
+        <a href="#">
+            <img src="images/logo (1).png" alt="" class="logo">
+        </a>
+        <nav><!--(li>a)*5---to convert this to 5 li---> 
+             <ul id="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">shop</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">account</a></li>
+                <li class="lg-bag"><a href="#">
+                    <i class="fa-solid fa-bag-shopping head-cart"></i></a>
+                </li>
+                <li>
+                    <a href="#" id="Close"><i class="fa-solid fa-xmark"></i></a>
+                </li>
+            </ul>
+
+        </nav>
+        <div id="mobile">
+            <a href="#">
+                <i class="fa-solid fa-bag-shopping head-cart"></i><!--مدي head cart علشان هستخدمها في css-->
+            </a>
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </div> <!--div#mobile--to convert this to div contain to id=mobile--->
+    </header>
+    <!-- Hero Section -->
+    <section id="img-slider"> 
+        <div class="slide active">
+            <img src="images/img1.jpg" alt="">
+            <div class="info">
+                <h4 class="select-none4">Trade-In-Offer</h4>
+                <h2 class="select-none2">Super Values Deals</h2>
+                <h1 class="select-none1">On all products</h1>
+                <p class="select-nonep">Save more with coupons & up to 70% off!</p>
+                <button>Shop now</button>
+            </div>
+        </div>    
+    </section>
+
+    <!-- Feature Section -->
+    <section id="feature" class="section-p1">
+        <div class="fe-box"><!--fe>>feature---------(div.fe-box>img+h6)*6----/ الحركة دي خلتك تعمل السطور ال تحت-->
+            <img src="images/f1.png" alt="">
+            <h6>Free Shipping</h6>
+        </div>
+        <div class="fe-box">
+            <img src="images/f2.png" alt="">
+            <h6>Online Order</h6>
+        </div>
+        <div class="fe-box">
+            <img src="images/f3.png" alt="">
+            <h6>Save Money</h6>
+        </div>
+        <div class="fe-box">
+            <img src="images/f4.png" alt="">
+            <h6>Promotion</h6>
+        </div>
+        <div class="fe-box">
+            <img src="images/f5.png" alt="">
+            <h6>Happy Sell</h6>
+        </div>
+        <div class="fe-box">
+            <img src="images/f6.png" alt="">
+            <h6>24/7 Support</h6>
+        </div>
+    </section>
+
+
+    <!-- Products -->
+    <section id="product1" class="section-p1">
+        <h2>Featured Products</h2>
+        <p>Summer Collection New Modern Design</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="images/f6.jpg" alt="">
+                <div class="des">
+                    <span>cara</span>
+                    <h5>Cartoon Astronaut T-shirts</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$129</h4>
+                </div>    
+                <div>
+                    <a href="" class="cart">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="images/f3.jpg" alt="">
+                <div class="des">
+                    <span>cara</span>
+                    <h5>Cartoon Astronaut T-shirts</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$129</h4>
+                </div>    
+                <div>
+                    <a href="" class="cart">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="images/f4.jpg" alt="">
+                <div class="des">
+                    <span>cara</span>
+                    <h5>Cartoon Astronaut T-shirts</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$129</h4>
+                </div>    
+                <div>
+                    <a href="" class="cart">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="images/f5.jpg" alt="">
+                <div class="des">
+                    <span>cara</span>
+                    <h5>Cartoon Astronaut T-shirts</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$129</h4>
+                </div>    
+                <div>
+                    <a href="" class="cart">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="images/f7.jpg" alt="">
+                <div class="des">
+                    <span>cara</span>
+                    <h5>Cartoon Astronaut T-shirts</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$129</h4>
+                </div>    
+                <div>
+                    <a href="" class="cart">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="images/f8.jpg" alt="">
+                <div class="des">
+                    <span>cara</span>
+                    <h5>Cartoon Astronaut T-shirts</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$129</h4>
+                </div>    
+                <div>
+                    <a href="" class="cart">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="images/f1.jpg" alt="">
+                <div class="des">
+                    <span>cara</span>
+                    <h5>Cartoon Astronaut T-shirts</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$129</h4>
+                </div>    
+                <div>
+                    <a href="" class="cart">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="images/f2.jpg" alt="">
+                <div class="des">
+                    <span>cara</span>
+                    <h5>Cartoon Astronaut T-shirts</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$129</h4>
+                </div>    
+                <div>
+                    <a href="" class="cart">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="offer">
+        <h4>Offers Services</h4>
+        <h2>Up to <span>70% Off</span> All T-shirt & Accesories</h2>
+    </section>
+
+
+    <!-- Footer Deja wajd hit fih bzaf tl content -->
+    <footer class="section-p1">
+        <div class="col">
+          <img src="./images/logo (1).png" alt="logo" class="logo" />
+          
+          <div class="follow">
+            <h4>Follow us</h4>
+            <div class="icon">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+          </div>
+        <div class="pay">
+          <p>Secured Payment Gateways</p>
+          <img src="./images/pay.png" alt="pay" />
+        </div>
+        <div class="copyright">
+          <p>©2024 Nasser Codes. All Rights Reseverd.</p>
+        </div>
+      </footer>
+</body>
+</html>

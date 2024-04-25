@@ -1,0 +1,283 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+/* Header section */
+#Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: #e3e6f3;
+    box-shadow: 0 5px 15px rgb(0,0,0,0.06);/* الشفافية */
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;/*علشان لو شلتها الخط ال بيكون تحت ال home وال جنبها هيكون في الصحة وخاصة تحت الlogo*/
+}
+#navbar li a {
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #1a1a1a;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+#navbar li a:hover,
+#navbar li a.active {
+    color: #088178;
+}
+#navbar li a:hover::after,/* */
+#navbar li a.active::after {
+    content: " ";
+    width: 30%;
+    height: 2px;
+    background-color: #088178;
+    position: absolute;/*علشان تعمل الخط ال بيكون تحت كلمة home وهكذا*/
+    bottom: -4px;
+    left: 21px;/*علشان تتحكم في الخط ده */
+
+}
+.head-cart {
+    font-size: 1.1em;
+}
+#mobile {
+    display: none;
+}
+#Close {
+    display: none;
+}
+/*-----------------------Style Hero Section-----------------------*/
+#img-slider {
+    height: 90vh;/* vh>>> view height من الصفحة*/
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden; 
+}
+#img-slider .slide img {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    object-position: top right;
+    position: relative;
+    z-index: 1;
+}
+#img-slider .slide .info {
+    position: absolute;/*علشان تخفي الكلام ال تحت الصورة*/
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;/*علشان اتحكم في flex*/
+    align-items: flex-start;/*علشان متخليش الزرار عريض اوي */
+    justify-content: center;
+    padding: 0 80px;
+} 
+.select-none4, .select-none2, .select-none1, .select-nonep {
+    user-select: none;/*كده هو مش هيخليك تعمل select علي الكلام ال انت كاتبه*/
+
+}
+#img-slider .slide .info h4 {
+    padding-bottom: 15px;
+}
+
+#img-slider .slide .info h1 {
+    color: #088178;
+}
+#img-slider .slide .info button {
+    background: url(../images/button\ \(1\).png);/*علشان توصل للصورة في ملف CSS تدوس POINT POINT علشان انت مرة للملف css ومرة للfolder بتاع  css*/
+    background-color: transparent;
+    border: 0;
+    color: #088178;
+    padding: 14px 80px 14px 65px;
+    font-size: 15px;
+    font-weight: 700;
+}
+#img-slider .slide .info .select-none2 {
+    font-size: 50px;
+    padding-top: 5px;
+}
+#img-slider .slide .info .select-none1 {
+    font-size: 50px;
+    padding-top: 5px;
+}
+#img-slider .slide .info .select-nonep {
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+/* Feature Section */
+#feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#feature .fe-box {
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgb(0,0,0,0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 60px 22px;
+    transition: all 0.3s ease linear;   
+}
+#feature .fe-box:hover {
+    box-shadow: 10px 10px 54px rgb(70,62,221,0.1);
+
+}
+#feature .fe-box img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+#feature .fe-box h6 {
+    padding: 9px 8px 6px;
+    background-color: #fddde4;
+    border-radius: 4px;
+    color: #088178;
+    line-height: 1;
+}
+#feature .fe-box:nth-child(2) h6 {/*علشان تحددوا نقطة معينة في الbosingوتغير فيها*/
+    background-color: #cdebbc;
+}
+#feature .fe-box:nth-child(3) h6 {
+    background-color: #d1e8f2;
+}
+#feature .fe-box:nth-child(4) h6 {
+    background-color: #f6dbf6;
+}
+#feature .fe-box:nth-child(5) h6 {
+    background-color: #cdd4f8;
+}
+#feature .fe-box:nth-child(6) h6 {
+    background-color: #fff2e5;
+}
+/*Products Section*/
+#product1 {
+    text-align: center;
+}
+#product1 .pro-container {
+     padding: 20px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-wrap: wrap;
+}
+#product1 .pro-container .pro {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgb(0,0,0,0.02);
+    margin: 15px 0;
+    transition: all 0.3s ease linear;
+    position: relative;
+}
+#product1 .pro-container .pro:hover {
+    box-shadow: 20px 20px 30px rgb(0,0,0,0.06);
+}
+#product1 .pro-container .pro img {
+    width: 100%; /*خلي الصور تصغر*/
+    border-radius: 20px;
+}
+#product1 .pro .des {
+    text-align: start;/*تخلي الكلام يبدا من الطرف*/
+    padding: 10px 0;
+}
+#product1 .pro .des span {
+    color: #606063;
+    font-size: 12px;
+}
+#product1 .pro .des h5 {
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+#product1 .pro .des i {
+    font-size: 12px;
+    color: rgb(243, 161 ,25);
+}
+#product1 .pro .des h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+
+}
+#product1 .pro .cart i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #e8f6ea;
+    border-radius: 50px;
+    color: #088178;
+    position: absolute;/*علشان اخلي ال icon علي الشمال*/
+    bottom: 20px;
+    right: 15px;/*وبتحكم في تحركها من دول*/
+}
+/* Call to Action */
+#offer {
+    background-image: url(../images/b2\ \(1\).jpg);
+    height: 40vh;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
+#offer h4 {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+#offer h2 {
+    color: white;
+    font-size: 30px;
+    padding: 10px 0;
+    margin-bottom: 50px;
+}
+#offer h2 span {
+    color: red;
+}
+footer {
+    margin: 40px 0;
+}
+footer .follow {
+    margin-top: 20px;
+}
+footer .follow i {
+    color: #465b52;
+    margin-right: 4px;
+}
+footer .follow i:hover {
+    color: #088178;
+}
+footer .copyright {
+    text-align: center;
+    width: 100;
+}
+.pay p {
+    text-align: end;
+}
+.pay img {
+    float: right;/*علشان اجيب الصورن ناحية اليمين*/
+    margin-right: 15px;
+}
